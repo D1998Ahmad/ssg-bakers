@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.arrows {
   color: white;
+  display: flex;
+  font-size: 30px;
+  justify-content: space-between;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  z-index: 1;
+}
+.slider {
+  overflow: hidden;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.slide-list {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+.slide {
+  flex: 1 0 100%;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slide-image {
+  display: flex;
+  margin: 0 auto;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  /* for gudiya */
+  /* object-fit: contain; */
+}
+.profile-photo {
+  display: flex;
+  margin: 0 auto;
+  height: 200px !important;
+  width: 200px !important;
+  object-fit: cover;
+  border-radius: 32%;
+}
+
+.slide-title {
+  text-align: center;
+  margin-top: 10px;
 }
